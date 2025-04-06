@@ -1,3 +1,6 @@
 [submodule "kangmin1123"]
 	path = kangmin1123
 	url = https://github.com/kangmin1123/cppstudt.git
+[submodule "sooyeons2"]
+	path = sooyeons2
+	url = https://github.com/sooyeons2/C-primer.git
