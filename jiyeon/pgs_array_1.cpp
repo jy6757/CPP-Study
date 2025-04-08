@@ -1,8 +1,19 @@
-#include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+#include <string>
+#include <vector>
+#include <set>
+#include <iostream>
 
-int* solution(int numbers[], size_t numbers_len) {
-    int* answer = (int*)malloc(sizeof(int));
+using namespace std;
+
+vector<int> solution(vector<int> numbers) {
+    set<int> sum;
+    
+    for(int i=0; i<numbers.size(); i++)
+        for(int j = i + 1; j< numbers.size(); j++)
+            sum.insert(numbers[i] + numbers[j]);
+
+   vector<int> answer(sum.begin(), sum.end());
+        
+    
     return answer;
 }
